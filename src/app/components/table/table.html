@@ -1,7 +1,7 @@
 <div class="report__list__div">
-  <div
+  @for (r of reports(); track $index; let i = $index) {
+  <button
     class="report__row"
-    *ngFor="let r of reports(); let i = index"
     (click)="selectRow(i)"
     [class.report__row--selected]="selectedRow() === i"
   >
@@ -33,10 +33,24 @@
     </div>
 
     <div class="report__row__actions">
-      <ng-container *ngIf="selectedRow() === i">
-        <i class="fa-solid fa-trash report__row__delete" (click)="deleteReport.emit(r); $event.stopPropagation()" ></i>
-        <i class="fa-solid fa-pencil report__row__edit"></i>
-      </ng-container>
+      @if (selectedRow() === i) {
+        <button
+            type="button"
+            class="report__row__delete-btn"
+            (click)="deleteReport.emit(r); $event.stopPropagation()"
+          >
+            <i class="fa-solid fa-trash report__row__delete"></i>
+          </button>
+
+          <button
+            type="button"
+            class="report__row__edit-btn"
+            (click)="$event.stopPropagation()"
+          >
+            <i class="fa-solid fa-pencil report__row__edit"></i>
+          </button>
+      }
     </div>
-  </div>
+  </button>
+}
 </div>

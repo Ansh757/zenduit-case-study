@@ -30,10 +30,12 @@
         <i class="fa-solid fa-chevron-down"></i>
       </button>
 
-      <div class="utility__sort__menu" *ngIf="isSortOpen()">
-        <button class="utility__sort__option" (click)="selectSort('Newest')">Newest</button>
-        <button class="utility__sort__option" (click)="selectSort('Oldest')">Oldest</button>
-        <button class="utility__sort__option" (click)="selectSort('Name')">Name</button>
+      <div class="utility__sort__menu">
+        @if (isSortOpen()) {
+          <button class="utility__sort__option" (click)="selectSort('Newest')">Newest</button>
+          <button class="utility__sort__option" (click)="selectSort('Oldest')">Oldest</button>
+          <button class="utility__sort__option" (click)="selectSort('Name')">Name</button>
+        }
       </div>
     </div>
   </div>

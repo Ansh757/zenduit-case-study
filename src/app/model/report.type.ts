@@ -1,10 +1,8 @@
-import { Form } from "@angular/forms";
-
 export interface Report {
     id: number,
     title: string, 
     created: Date,
     modified: Date, 
     owner: string,
-    from: string,
+    from: string, // Can be changed to Form
 };  
