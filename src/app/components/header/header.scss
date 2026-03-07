@@ -1,0 +1,38 @@
+.header__div {
+  display: flex;
+  align-items: center;
+  background-color: #1e90ff;
+  color: #FFFFFF;
+  padding: 0 20px;
+  user-select: none;
+}
+
+.header__div__heading {
+    flex: 1;
+    cursor: pointer;
+}
+
+.header__div__nav {
+    flex: 2;
+}
+
+.header__div__nav ul {
+    display: flex;
+    gap: 2rem;
+    list-style: none;
+    justify-content: center;
+}
+
+.header__div__icons {
+    flex: 1;
+    display: flex;
+    justify-content: flex-end;
+    gap: 1rem;
+}
+
+li {
+    display: flex;
+    justify-content: center;
+    gap: 0.5rem;
+    cursor: pointer;
+}

@@ -1,0 +1,42 @@
+<div class="report__list__div">
+  <div
+    class="report__row"
+    *ngFor="let r of reports(); let i = index"
+    (click)="selectRow(i)"
+    [class.report__row--selected]="selectedRow() === i"
+  >
+    <div class="report__row__field">
+      <div class="report__row__value report__row__title"> 
+        <i class="fa-solid fa-chart-pie" style="color: #1e90ff;"></i> 
+        <b>{{ r.title }}</b>
+      </div>
+    </div>
+
+    <div class="report__row__field">
+      <span class="report__row__label">Created:</span>
+      <span class="report__row__value">{{ r.created | date:'MMMM d, y' }}</span>
+    </div>
+
+    <div class="report__row__field">
+      <span class="report__row__label">Modified:</span>
+      <span class="report__row__value">{{ r.modified | date:'MMMM d, y' }}</span>
+    </div>
+
+    <div class="report__row__field">
+      <span class="report__row__label">Owner:</span>
+      <span class="report__row__value">{{ r.owner }}</span>
+    </div>
+
+    <div class="report__row__field">
+      <span class="report__row__label">From:</span>
+      <span class="report__row__value report__row__from">{{ r.from }}</span>
+    </div>
+
+    <div class="report__row__actions">
+      <ng-container *ngIf="selectedRow() === i">
+        <i class="fa-solid fa-trash report__row__delete" (click)="deleteReport.emit(r); $event.stopPropagation()" ></i>
+        <i class="fa-solid fa-pencil report__row__edit"></i>
+      </ng-container>
+    </div>
+  </div>
+</div>

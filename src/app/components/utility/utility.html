@@ -1,0 +1,40 @@
+<div class="utility__div">
+    <!-- Utility Left Side -->
+  <div class="utility__left">
+    <div class="utility__search">
+      <i class="fa-solid fa-magnifying-glass utility__search__icon"></i>
+      <input
+        class="utility__input"
+        name="search"
+        placeholder="Search..."
+        [style.width]="width()"
+        [style.height]="height()"
+        (input)="onSearch($event)"
+      />
+    </div>
+  </div>
+  <!-- Utility Right Side -->
+  <div class="utility__right">
+    <div class="utility__div__btn">
+      <i class="fa-solid fa-plus"></i>
+      <button class="add_btn">
+        Add new {{ addBtnTitle() }}
+      </button>
+    </div>
+
+    <div class="utility__div__sort">
+      <span class="utility__sort__span">Sort by:</span>
+
+      <button class="utility__btn__sort" (click)=toggleSortMenu()>
+        {{ selectedSort() }}
+        <i class="fa-solid fa-chevron-down"></i>
+      </button>
+
+      <div class="utility__sort__menu" *ngIf="isSortOpen()">
+        <button class="utility__sort__option" (click)="selectSort('Newest')">Newest</button>
+        <button class="utility__sort__option" (click)="selectSort('Oldest')">Oldest</button>
+        <button class="utility__sort__option" (click)="selectSort('Name')">Name</button>
+      </div>
+    </div>
+  </div>
+</div>

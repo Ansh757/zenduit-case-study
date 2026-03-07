@@ -1,0 +1,43 @@
+.table__outermost__div {
+    margin: 2rem 0;
+}
+
+.reports__div__page {
+    padding: 2.5rem 2.75rem;
+}
+
+.reports__div__footer {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  margin-top: 1.5rem;
+  font-size: 0.8rem;
+  color: #111827;
+}
+
+.reports__div__pagination {
+  display: flex;
+  align-items: center;
+  gap: 0.5rem;
+}
+
+.reports__div__pagination button {
+  min-width: 1.75rem;
+  height: 1.75rem;
+  border: 0.0625rem solid #d1d5db;
+  background: white;
+  border-radius: 0.25rem;
+  cursor: pointer;
+  font-size: 0.8rem;
+}
+
+.reports__div__pagination button.active {
+  border-color: #1294e8;
+  color: #1294e8;
+  font-weight: 600;
+}
+
+.reports__div__pagination button:disabled {
+  opacity: 0.5;
+  cursor: not-allowed;
+}

@@ -1,0 +1,54 @@
+import { Report } from "../model/report.type";
+
+export const MOCK_REPORTS: Report[] = [
+    {
+      id: 0,
+      title: 'Test Report',
+      created: new Date('Dec 24, 2020'),
+      modified: new Date('Dec 24, 2020'),
+      owner: 'zendumademo-trax@zenduit.com',
+      from: 'Billing Chilling Regular Form',
+    },
+    {
+      id: 1,
+      title: 'Test Report 2',
+      created: new Date('Dec 26, 2020'),
+      modified:new Date('Dec 26, 2020'),
+      owner: 'johndoodson@zenduit.com',
+      from: 'Geotab odometer-test',
+    },
+    {
+      id: 2,
+      title: 'SAWG Install Report',
+      created: new Date('Dec 27, 2020'),
+      modified: new Date('Dec 27, 2020'),
+      owner: 'joshuatreffue@zenduit.com',
+      from: 'Bill of Landing Template',
+    },
+    {
+      id: 3,
+      title: 'Five and Ambulance for Wood Buffalo',
+      created: new Date('Dec 28, 2020'),
+      modified: new Date('Dec 29, 2020'),
+      owner: 'christianbale@zenduit.com',
+      from: 'Product Delivery Form Test',
+    },
+    {
+      id: 4,
+      title: 'Test Report 3',
+      created: new Date('Dec 30, 2020'),
+      modified: new Date('Dec 30, 2020'),
+      owner: 'margareteblane@zenduit.com',
+      from: 'Product Test Form',
+    },
+    {
+      id: 5,
+      title: 'Test Report 4',
+      created: new Date('Jan 30, 2021'),
+      modified: new Date('Jan 30, 2021'),
+      owner: 'margareteblane@zenduit.com',
+      from: 'Product Test Form II',
+    },
+
+
+]

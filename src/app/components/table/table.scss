@@ -1,0 +1,73 @@
+.report__list__div {
+  display: flex;
+  flex-direction: column;
+  gap: 0.8rem;
+  margin-top: 0.75rem;
+}
+
+.report__row {
+  display: grid;
+  grid-template-columns: 2fr 1fr 1fr 1.6fr 1.5fr 4.5rem;
+  gap: 1.25rem;
+  align-items: center;
+
+  padding: 0.875rem 1rem;
+  background: white;
+  border: 1px solid #dbe3ea;
+  border-radius: 0.5rem;
+  cursor: pointer;
+}
+
+.report__row--selected {
+  border-color: #1294e8;
+  background-color: #f8fbff;
+}
+
+.report__row__field {
+  display: flex;
+  flex-direction: column;
+  gap: 0.3rem;
+  min-width: 0;
+}
+
+.report__row__label {
+  font-size: 0.75rem;
+  font-weight: 500;
+  color: #9ca3af;
+}
+
+.report__row__value {
+  font-size: 0.9rem;
+  color: #111827;
+  word-break: break-word;
+}
+
+.report__row__title {
+  display: flex;
+  align-items: center;
+  gap: 0.5rem;
+}
+
+.report__row__from {
+  color: #1294e8;
+  font-weight: 600;
+}
+
+.report__row__actions {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 0.8rem;
+  width: 4.5rem;
+  height: 100%;
+}
+
+.report__row__delete {
+  color: #ff5a3d;
+  cursor: pointer;
+}
+
+.report__row__edit {
+  color: #1294e8;
+  cursor: pointer;
+}
