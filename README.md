@@ -1,59 +1,29 @@
 # AngularCaseStudy
 
-This project was generated using [Angular CLI](https://github.com/angular/angular-cli) version 21.2.1.
+This Case Study is for Zenduit as part of the interview process. The main goal of the case study was to test the front-end functionaility and angular familarity. 
+
+** Note: In the document, it says the following two commands must be successful upon build. `ng build --prod` and `ng lint`. I downloadeed the latest version of Angular so the newer version for that command `ng build --configuration production` is successful. 
+
+## Website Deployed URL (Netlify)
+https://zenduit-case-study.netlify.app/forms
 
 ## Development server
 
 To start a local development server, run:
 
 ```bash
-ng serve
+git clone https://github.com/Ansh757/zenduit-case-study.git
+npm install 
+npm start
 ```
 
 Once the server is running, open your browser and navigate to `http://localhost:4200/`. The application will automatically reload whenever you modify any of the source files.
 
-## Code scaffolding
+## Architectural Design
+I wanted to be bit modular with the design; so the componets are well segragated. There are components folder (for reusable components), there is a pages folder that contains that contains all the pages for the website. There is a seperate folder for models to define Report Models (for the purpose of this case study). Finally, a folder for Mock Data. 
 
-Angular CLI includes powerful code scaffolding tools. To generate a new component, run:
+## Functionalities
+1. Implemented Search Functionality - using typescript logic to simply check each user action typed on the search bar and render the frontend based on the matches.
+2. Implemented Sort Functionality - Defaults to Newest created, Name alphabetically and Oldest. The sort works a.time - b.time logic and renders the frontend based on the selected sort. 
+3. Deleting Report Feature - simply delete the selected report after user confirms on the confirmation window.  
 
-```bash
-ng generate component component-name
-```
-
-For a complete list of available schematics (such as `components`, `directives`, or `pipes`), run:
-
-```bash
-ng generate --help
-```
-
-## Building
-
-To build the project run:
-
-```bash
-ng build
-```
-
-This will compile your project and store the build artifacts in the `dist/` directory. By default, the production build optimizes your application for performance and speed.
-
-## Running unit tests
-
-To execute unit tests with the [Vitest](https://vitest.dev/) test runner, use the following command:
-
-```bash
-ng test
-```
-
-## Running end-to-end tests
-
-For end-to-end (e2e) testing, run:
-
-```bash
-ng e2e
-```
-
-Angular CLI does not come with an end-to-end testing framework by default. You can choose one that suits your needs.
-
-## Additional Resources
-
-For more information on using the Angular CLI, including detailed command references, visit the [Angular CLI Overview and Command Reference](https://angular.dev/tools/cli) page.
