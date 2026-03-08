@@ -13,8 +13,15 @@ To start a local development server, run:
 
 ```bash
 git clone https://github.com/Ansh757/zenduit-case-study.git
+cd zenduit-case-study
 npm install 
 npm start
+```
+
+Additional Commands:
+```bash
+ng lint (Additional)
+ng build --configuration production (Additional)
 ```
 
 Once the server is running, open your browser and navigate to `http://localhost:4200/`. The application will automatically reload whenever you modify any of the source files.
