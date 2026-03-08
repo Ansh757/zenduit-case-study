@@ -62,6 +62,12 @@
   height: 100%;
 }
 
+.report__row__delete__btn,
+.report__row__edit__btn {
+  background: transparent;
+  border: none;
+}
+
 .report__row__delete {
   color: #ff5a3d;
   cursor: pointer;

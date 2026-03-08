@@ -36,7 +36,7 @@
       @if (selectedRow() === i) {
         <button
             type="button"
-            class="report__row__delete-btn"
+            class="report__row__delete__btn"
             (click)="deleteReport.emit(r); $event.stopPropagation()"
           >
             <i class="fa-solid fa-trash report__row__delete"></i>
@@ -44,7 +44,7 @@
 
           <button
             type="button"
-            class="report__row__edit-btn"
+            class="report__row__edit__btn"
             (click)="$event.stopPropagation()"
           >
             <i class="fa-solid fa-pencil report__row__edit"></i>
