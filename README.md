@@ -1,6 +1,6 @@
 # AngularCaseStudy
 
-This Case Study is for Zenduit as part of the interview process. The goal of this case study was to demonstrate front-end implementation skills and familiarity with Angular.”
+This Case Study is for Zenduit as part of the interview process. The goal of this case study was to demonstrate front-end implementation skills and familiarity with Angular. It redirects to Form as the HomePage. The Routings are set, so you may simpliy go to the Reports page for the implmented features. 
 
 **Note:** The original instructions reference `ng build --prod`. In newer Angular versions, the equivalent production build command is `ng build --configuration production`, which completes successfully in this project.
 
