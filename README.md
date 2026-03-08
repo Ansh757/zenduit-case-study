@@ -1,8 +1,8 @@
 # AngularCaseStudy
 
-This Case Study is for Zenduit as part of the interview process. The main goal of the case study was to test the front-end functionaility and angular familarity. 
+This Case Study is for Zenduit as part of the interview process. The goal of this case study was to demonstrate front-end implementation skills and familiarity with Angular.”
 
-** Note: In the document, it says the following two commands must be successful upon build. `ng build --prod` and `ng lint`. I downloadeed the latest version of Angular so the newer version for that command `ng build --configuration production` is successful. 
+**Note:** The original instructions reference `ng build --prod`. In newer Angular versions, the equivalent production build command is `ng build --configuration production`, which completes successfully in this project.
 
 ## Website Deployed URL (Netlify)
 https://zenduit-case-study.netlify.app/forms
@@ -19,11 +19,26 @@ npm start
 
 Once the server is running, open your browser and navigate to `http://localhost:4200/`. The application will automatically reload whenever you modify any of the source files.
 
+## Project Structure
+
+src/
+  app/
+    components/
+    pages/
+    models/
+    mock-data/
+
 ## Architectural Design
 I wanted to be bit modular with the design; so the componets are well segragated. There are components folder (for reusable components), there is a pages folder that contains that contains all the pages for the website. There is a seperate folder for models to define Report Models (for the purpose of this case study). Finally, a folder for Mock Data. 
 
 ## Functionalities
-1. Implemented Search Functionality - using typescript logic to simply check each user action typed on the search bar and render the frontend based on the matches.
-2. Implemented Sort Functionality - Defaults to Newest created, Name alphabetically and Oldest. The sort works a.time - b.time logic and renders the frontend based on the selected sort. 
-3. Deleting Report Feature - simply delete the selected report after user confirms on the confirmation window.  
+1. **Search** — Filters the report list in real time based on user input.
+2. **Sorting** — Supports sorting by newest created, oldest created, and alphabetical name order.
+3. **Delete** — Allows the user to remove a selected report after confirmation in a modal/dialog.
+
+## Assumptions 
+
+- Data is mocked for the purpose of the exercise.
+- Delete functionality updates UI state only and does not persist to a backend.
+- Focus was placed on component structure, usability, and clean Angular patterns.
 
