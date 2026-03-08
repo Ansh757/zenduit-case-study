@@ -1,59 +1,44 @@
 # AngularCaseStudy
 
-This project was generated using [Angular CLI](https://github.com/angular/angular-cli) version 21.2.1.
+This Case Study is for Zenduit as part of the interview process. The goal of this case study was to demonstrate front-end implementation skills and familiarity with Angular. It redirects to Form as the HomePage. The Routings are set, so you may simpliy go to the Reports page for the implmented features. 
+
+**Note:** The original instructions reference `ng build --prod`. In newer Angular versions, the equivalent production build command is `ng build --configuration production`, which completes successfully in this project.
+
+## Website Deployed URL (Netlify)
+https://zenduit-case-study.netlify.app/
 
 ## Development server
 
 To start a local development server, run:
 
 ```bash
-ng serve
+git clone https://github.com/Ansh757/zenduit-case-study.git
+npm install 
+npm start
 ```
 
 Once the server is running, open your browser and navigate to `http://localhost:4200/`. The application will automatically reload whenever you modify any of the source files.
 
-## Code scaffolding
+## Project Structure
 
-Angular CLI includes powerful code scaffolding tools. To generate a new component, run:
+src/
+  app/
+    components/
+    pages/
+    models/
+    mock-data/
 
-```bash
-ng generate component component-name
-```
+## Architectural Design
+I wanted to be bit modular with the design; so the componets are well segragated. There are components folder (for reusable components), there is a pages folder that contains that contains all the pages for the website. There is a seperate folder for models to define Report Models (for the purpose of this case study). Finally, a folder for Mock Data. 
 
-For a complete list of available schematics (such as `components`, `directives`, or `pipes`), run:
+## Functionalities
+1. **Search** — Filters the report list in real time based on user input.
+2. **Sorting** — Supports sorting by newest created, oldest created, and alphabetical name order.
+3. **Delete** — Allows the user to remove a selected report after confirmation in a modal/dialog.
 
-```bash
-ng generate --help
-```
+## Assumptions 
 
-## Building
+- Data is mocked for the purpose of the exercise.
+- Delete functionality updates UI state only and does not persist to a backend.
+- Focus was placed on component structure, usability, and clean Angular patterns.
 
-To build the project run:
-
-```bash
-ng build
-```
-
-This will compile your project and store the build artifacts in the `dist/` directory. By default, the production build optimizes your application for performance and speed.
-
-## Running unit tests
-
-To execute unit tests with the [Vitest](https://vitest.dev/) test runner, use the following command:
-
-```bash
-ng test
-```
-
-## Running end-to-end tests
-
-For end-to-end (e2e) testing, run:
-
-```bash
-ng e2e
-```
-
-Angular CLI does not come with an end-to-end testing framework by default. You can choose one that suits your needs.
-
-## Additional Resources
-
-For more information on using the Angular CLI, including detailed command references, visit the [Angular CLI Overview and Command Reference](https://angular.dev/tools/cli) page.
