@@ -5,7 +5,7 @@ This Case Study is for Zenduit as part of the interview process. The goal of thi
 **Note:** The original instructions reference `ng build --prod`. In newer Angular versions, the equivalent production build command is `ng build --configuration production`, which completes successfully in this project.
 
 ## Website Deployed URL (Netlify)
-https://zenduit-case-study.netlify.app/forms
+https://zenduit-case-study.netlify.app/
 
 ## Development server
 
