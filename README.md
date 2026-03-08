@@ -18,13 +18,13 @@ npm install
 npm start
 ```
 
+Once the server is running, open your browser and navigate to `http://localhost:4200/`.
+
 Additional Commands:
 ```bash
 ng lint (Additional)
 ng build --configuration production (Additional)
 ```
-
-Once the server is running, open your browser and navigate to `http://localhost:4200/`. The application will automatically reload whenever you modify any of the source files.
 
 ## Project Structure
 
